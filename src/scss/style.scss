@@ -207,6 +207,8 @@
 
     &__item-text {
         padding-bottom: 200px;
+        max-width: 316px;
+        margin: 0 auto;
     }
 
     &__link {
@@ -229,13 +231,178 @@
             z-index: -1;
             top: -10px;
             right: -42px;
-
         }
     }
 }
 
 // dream end
+// creative start
 
+.creative {
+    background-color: $yellow;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/creative-bg.png);
+        width: 100%;
+        bottom: 0;
+        height: 375px;
+        z-index: -1;
+        opacity: 0.2;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__inner {
+        text-align: center;
+    }
+
+    &__title {
+        @include black;
+        font-size: 56px;
+        padding-top: 85px;
+        padding-bottom: 40px;
+    }
+
+    &__text {
+        @include reg;
+        font-size: 17px;
+        padding-bottom: 60px;
+        max-width: 985px;
+        margin: 0 auto;
+    }
+
+    &__box {
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 185px;
+        z-index: 2;
+    }
+
+    &__item {
+        margin-bottom: -5px;
+    }
+
+    &__item-link {
+        bottom: 125px;
+    }
+}
+
+// creative end
+// partners start
+
+.partners {
+    height: 365px;
+    width: 100%;
+    background-position: center;
+    text-align: center;
+    background-repeat: repeat;
+    background-size: cover;
+    background-image: url(../images/partners.jpg);
+}
+
+// partners end
+// review start
+
+.review {
+    text-align: center;
+    background-image: url(../images/review.jpg);
+    width: 100%;
+
+    &__inner {
+        padding-top: 120px;
+        padding-bottom: 110px;
+    }
+
+    &__title {
+        @include black;
+        font-size: 56px;
+        color: #ffffff;
+        padding-bottom: 55px;
+    }
+
+    &__text {
+        @include reg;
+        color: #ffffff;
+        font-size: 17px;
+        max-width: 985px;
+        margin: 0 auto;
+        padding-bottom: 70px;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        background-color: #000000;
+        padding: 36px 32px 33px;
+        margin-left: 18px;
+        margin-right: 18px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url(../images/review-dots.png);
+            width: 46px;
+            height: 31px;
+            top: 18px;
+            right: 15px;
+        }
+    }
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        max-width: 245px;
+        width: 100%;
+        max-height: 71px;
+    }
+
+    &__author-img {
+        width: 71px;
+        height: 71px;
+        border-radius: 50%;
+    }
+
+    &__author-name {
+        @include bold;
+        color: #ffffff;
+        font-size: 25px;
+        width: 100%;
+        padding-top: 10px;
+        margin-left: 12px;
+    }
+
+    &__author-title {
+        @include medi;
+        font-size: 17px;
+        color: #ffffff;
+        padding-bottom: 3px;
+
+        padding-left: 16px;
+    }
+
+    &__item-text {
+        @include reg;
+        font-size: 15px;
+        line-height: 30px;
+        color: #ffffff;
+        opacity: 0.5;
+        text-align: left;
+        padding-top: 25px;
+        padding-bottom: 26px;
+    }
+}
+
+// review end
 //-----------------------------------------------------------------------------------------------------------
 //
 //                                                    END CODE

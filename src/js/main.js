@@ -10,5 +10,12 @@ $(function () {
         speed: 500,
         fade: true,
         cssEase: 'linear'
-      });
+    });
+
+    $(".rate-star").rateYo({
+        rating: 3.6,
+        normalFill: "#ffffff",
+        ratedFill: "#f8e530",
+        starWidth: "19px",
+    });
 });

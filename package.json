@@ -12,6 +12,7 @@
   "devDependencies": {
     "@babel/core": "^7.10.1",
     "@babel/preset-env": "^7.10.1",
+    "@rateyo/jquery": "^3.0.0-alpha.2",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
     "fontforge": "^0.0.4",
@@ -47,6 +48,7 @@
     "gulp-webp-html": "^1.0.2",
     "imagemin-jpeg-recompress": "^7.0.0",
     "imagemin-pngquant": "^8.0.0",
+    "rateyo": "2.3.5",
     "replace": "^1.2.0",
     "sass": "^1.26.7",
     "slick-carousel": "^1.8.1",
