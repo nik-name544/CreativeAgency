@@ -23,7 +23,7 @@
         justify-content: space-between;
         padding-top: 30px;
         transform: translateY(0%);
-        transition: linear .5s;
+        transition: linear 0.5s;
     }
 
     &__list.off {
@@ -34,7 +34,7 @@
     &__item {
         a {
             color: #ffffff;
-            @include f600;
+            @include semi-b;
             font-size: 18.9px;
             line-height: 18.52px;
             padding-right: 70px;
@@ -68,15 +68,90 @@
 .like-slider {
     height: 890px;
     background-color: $yellow;
-    text-align: center;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-position-y: 30px;
 
-    img {
+    &__inner {
         padding-top: 30px;
+        padding-left: 70px;
+        text-align: center;
+        align-items: center;
+        background-repeat: no-repeat;
+    }
+
+    &__item {
+        width: 100%;
+        background-position: center;
+        position: relative;
+        outline: transparent;
+    }
+
+    &__item-text-wrapper {
+        position: absolute;
+        text-align: center;
+        top: 163px;
+        // right: 410px;
+        left: 715px;
+        width: 100%;
+        max-width: 705px;
+    }
+
+    &__item-title {
+        font-size: 130.56px;
+        line-height: 94.84px;
+        @include black;
+        width: 100%;
+        max-width: 705px;
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    &__item-text {
+        @include reg;
+        font-size: 19.3px;
+        max-width: 555px;
+        padding-bottom: 50px;
+        padding-left: 75px;
+    }
+
+    &__item-link {
+        color: #ffffff;
+        position: relative;
+        z-index: 1;
+        @include black;
+        font-size: 19px;
+        line-height: 14px;
+        margin-left: -19px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url(../images/link-bg.svg);
+            width: 195px;
+            height: 42px;
+            z-index: -1;
+            top: -10px;
+            right: -42px;
+        }
     }
 }
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+}
+
+.slick-dots li button {
+    border: none;
+    background-color: #0c0c0c;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 17px;
+    height: 17px;
+
+}
+
+
 
 // like-slider end
 

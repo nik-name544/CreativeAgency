@@ -1,26 +1,26 @@
 $yellow: #f8e530;
 
-@mixin f400 {
+@mixin reg {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400; 
 }
 
-@mixin f500 {
+@mixin medi {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500; 
 }
 
-@mixin f600 {
+@mixin semi-b {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600; 
 }
 
-@mixin f700 {
+@mixin bold {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
 
-@mixin f900 {
+@mixin black {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900; 
 }
