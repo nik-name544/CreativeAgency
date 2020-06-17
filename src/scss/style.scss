@@ -1,6 +1,6 @@
-@import 'vars';
-@import 'fonts';
-@import 'global';
+@import "vars";
+@import "fonts";
+@import "global";
 
 //-----------------------------------------------------------------------------------------------------------
 //
@@ -8,7 +8,77 @@
 //
 //-----------------------------------------------------------------------------------------------------------
 
+// header start
 
+.header {
+    max-width: 100%;
+    background-image: url(../images/logo-bg.jpg);
+    max-height: 128px;
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 58px 30px 100px;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        transform: translateY(0%);
+        transition: linear .5s;
+    }
+
+    &__list.off {
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+
+    &__item {
+        a {
+            color: #ffffff;
+            @include f600;
+            font-size: 18.9px;
+            line-height: 18.52px;
+            padding-right: 70px;
+        }
+    }
+
+    &__item--active {
+        a {
+            color: $yellow;
+        }
+    }
+
+    &__menu-btn {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url(../images/icons/menu-ico.svg);
+            width: 48px;
+            height: 39px;
+            right: 0;
+            top: -30px;
+        }
+    }
+}
+
+// header end
+// like-slider star
+
+.like-slider {
+    height: 890px;
+    background-color: $yellow;
+    text-align: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position-y: 30px;
+
+    img {
+        padding-top: 30px;
+    }
+}
+
+// like-slider end
 
 //-----------------------------------------------------------------------------------------------------------
 //
@@ -16,4 +86,4 @@
 //
 //-----------------------------------------------------------------------------------------------------------
 
-@import 'media';
+@import "media";
