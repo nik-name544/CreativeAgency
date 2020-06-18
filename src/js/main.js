@@ -1,6 +1,7 @@
 $(function () {
     $('.header__menu-btn').on('click', function () {
         $('.header__list').toggleClass("off");
+        $('.header__menu-btn').toggleClass("on");
     });
 
     $('.like-slider__inner').slick({
